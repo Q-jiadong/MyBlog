@@ -1,7 +1,6 @@
 body
 {
     margin: 0px;
-    position: relative;
 }
 
 a
@@ -15,12 +14,11 @@ a:hover
     color: #104E8B;
 }
 
-.nav
+.wrapper
 {
-    height: 30px;
+	height: 50px;
     background-color: #5CACEE;
-    padding-top: 10px;
-    padding-left: 150px;
+    padding-left: 50px;
     border-style: solid;
     border-color: #ccc;
     border-top: 0px;
@@ -28,26 +26,24 @@ a:hover
     border-right: 0px;
 }
 
+.logo
+{
+	float: left;
+}
+
 .nav-bar
 {
+	float: left;
     display: inline;
 }
 
 .header-list
 {
-    margin-right: 20px;
+    margin-left: 20px;
     display: inline-block;
     color: white;
     font-weight: bold;
     font-size: 20px;
-}
-
-.selected
-{
-    background:#5378a6;
-    color:#fff
-    margin-right: 20px;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 20px;
+	margin-top: -10px;
+	margin-bottom: -10px;
 }
