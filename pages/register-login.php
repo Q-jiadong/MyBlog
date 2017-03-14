@@ -12,6 +12,25 @@
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
 $name = $email = $gender = $comment = $website = "";
 
+$con = mysql_connect("qdm209094407.my3w.com","qdm209094407","wearefriends322");
+
+if (!$con)
+  {
+  die('Could not connect: ' . mysql_error());
+  }
+
+// Create table in my_db database
+mysql_select_db("qdm209094407_db", $con);
+$sql = "CREATE TABLE Persons 
+(
+FirstName varchar(15),
+LastName varchar(15),
+Age int
+)";
+mysql_query($sql,$con);
+
+mysql_close($con);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
    if (empty($_POST["name"])) {
      $nameErr = "姓名是必填的";

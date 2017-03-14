@@ -22,6 +22,21 @@
                     alert('您输入的用户名不存在');
                 }
             }
+			
+			function changeColor(num) {
+				var block = document.getElementById('colorblock');
+				if (num == 1) {
+					block.style.background = "black";
+				} else if (num == 2) {
+					block.style.background = "red";
+				} else if (num == 3) {
+					block.style.background = "green";
+				} else if (num == 4) {
+					block.style.background = "yellow"
+				} else if (num == 5) {
+					block.style.background = "blue";
+				}
+			}
         </script>
     </head>
     <body>
@@ -33,8 +48,16 @@
             <br>
             密码:<input type="text" id="password">
         </form>
-        <button onclick="checkLogin()"/>登录知乎</button>
+        <button onclick="checkLogin()">登录知乎</button>
         <p>点击[注册]按钮，即代表你同意《知乎协议》</p>
-        <button onclick="alert('下载成功')"/>下载知乎APP</button>
+        <button onclick="alert('下载成功')">下载知乎APP</button>
+		
+		<div id="colorblock">
+			<button onclick="changeColor(1)">黑色</button>
+			<button onclick="changeColor(2)">红色</button>
+			<button onclick="changeColor(3)">绿色</button>
+			<button onclick="changeColor(4)">黄色</button>
+			<button onclick="changeColor(5)">蓝色</button>
+		</div>
     </body>
 </html>
