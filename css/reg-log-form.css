@@ -1,0 +1,100 @@
+body
+{
+    margin: 0px;
+	background: #0099FF;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover
+{
+    color: #104E8B;
+}
+
+a.selected {
+	color: #104E8B;
+}
+
+.wrapper
+{
+	height: 50px;
+    padding-left: 150px;
+}
+
+.logo
+{
+	float: left;
+}
+
+.nav-bar
+{
+	float: left;
+    display: inline;
+}
+
+.header-list
+{
+    margin-left: 20px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+.register-login
+{
+	float: right;
+	margin-right: 10%;
+}
+
+.reg-log-form
+{
+	position: absolute;
+	margin-left: 50%;
+	margin-right: 50%;
+	margin-top: 350px;
+}
+
+.reg-log-input
+{
+	height: 35px;
+	width: 230px;
+	border-radius: 8px;
+	border: 0px;
+	margin-bottom: 10px;
+}
+
+.reg-log-button
+{
+	height: 35px;
+	width: 230px;
+	background-color: #FFFFFF;
+	border: 0px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+}
+
+#verify-code-input
+{
+	height: 35px;
+	width: 130px;
+	background-color: #FFFFFF;
+	border: 0px;
+	border-radius: 8px;
+}
+
+#verify-code
+{
+	height: 35px;
+	width: 80px;
+	background-color: #FFFFFF;
+	border: 0px;
+	border-radius: 8px;
+	margin-left: 20px;
+}

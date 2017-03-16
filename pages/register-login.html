@@ -7,7 +7,20 @@
     <meta http-equiv = "Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="编程入门 JavaScript Python"/>
     <meta name="description" content="你说编程靠智力，我说你和会编程的人之间只差了几个小时的耐心。"/>
-    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/reg-log-form.css" rel="stylesheet" type="text/css"/>
+	
+	<script>
+		var userNameInput = document.getElementById("user-name-input");
+		var passwordInput = document.getElementById("password-input");
+		
+		function triggerLogin() {
+		
+		}
+		
+		function triggerRegister() {
+		
+		}
+	</script>
 </head>
 
 <body>
@@ -18,7 +31,7 @@
 		<div class="nav-bar">
 			<ul>
 				<li class="header-list">
-					<a class="selected">首页</a>
+					<a href="../index.html">首页</a>
 				</li>
 				<li class="header-list">
 					|
@@ -40,7 +53,7 @@
 		<div class="register-login">
 		    <ul>
 				<li class="header-list">
-					<a href="pages/register-login.html">登录</a>
+					<a href="pages/register-login.php">登录</a>
 				</li>
 				<li class="header-list">
 					|
@@ -54,11 +67,20 @@
     <!--end nav-->
 	
 	<!-- start content -->
-	<div class="content">
-		<div id="new-post-img">
-		    <h1 style="color: white">最新文章</h1>
-		</div>
+	<div class="reg-log-form">
+		<form>
+			<ul>
+				<li class="header-list">登录</li>
+				<li class="header-list">注册</li>
+			</ul>
+			<input class="reg-log-input" id="user-name-input"/><br/>
+			<input class="reg-log-input" id="password-input"/><br/>
+			<input class="reg-log-input" id="password-confirm-input"/><br/>
+			<input class="reg-log-input" id="verify-code-input"/><button class="reg-log-button" id="verify-code">发送验证码</button><br/>
+			<button class="reg-log-button" id="login-btn">登录</button><button class="reg-log-button" id="register-btn">注册</button><br/>
+			<a style="text-decoration: underline">忘记密码？</a>
+		</form>
 	</div>
+	<!-- end content -->
 </body>
 </html>
-
